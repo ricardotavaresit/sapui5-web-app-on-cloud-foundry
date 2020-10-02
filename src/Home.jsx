@@ -23,6 +23,7 @@ import "@ui5/webcomponents-icons/dist/icons/line-chart.js";
 import "@ui5/webcomponents-icons/dist/icons/list.js";
 import "@ui5/webcomponents-icons/dist/icons/table-view.js";
 import { MyCustomElement } from "./MyCustomElement";
+import {dataset}  from './Data';
 
 
 export function Home() {
@@ -48,36 +49,7 @@ export function Home() {
       }, 2000);
     }
   };
-  const dataset = [
-    {
-      month: "January",
-      data: 65
-    },
-    {
-      month: "February",
-      data: 59
-    },
-    {
-      month: "March",
-      data: 80
-    },
-    {
-      month: "April",
-      data: 81
-    },
-    {
-      month: "May",
-      data: 56
-    },
-    {
-      month: "June",
-      data: 55
-    },
-    {
-      month: "July",
-      data: 40
-    }
-  ];
+ 
   const tableData = new Array(500).fill(null).map((_, index) => {
     return {
       name: `name${index}`,
